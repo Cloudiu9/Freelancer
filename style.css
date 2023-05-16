@@ -1,0 +1,470 @@
+/* display: flex for pretty much everything */
+/* remove style from html */
+#wrapper{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+#headerm{ /* hiding mobile header */
+    display: none;
+}
+.hamburger{ /* hiding mobile hamburger menu */
+    display: none;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    align-items: center;
+    top: 0;
+    z-index: 99; /* makes it so that logos from the page aren't on top of the header */
+    background-color: white;
+    opacity: 90%;
+    padding: 30px;
+}
+nav{
+    font-weight: bold;
+    font-size: 25px;
+}
+ul{
+    display: flex;
+    align-content: right;
+}
+li{
+    list-style: none; /* removes bullets from list elements */
+    padding-left: 30px;
+}
+#logo{
+    width: 80px;
+}
+body{
+    background-color: rgb(255, 228, 175);
+    margin: 0;
+    padding: 0px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+#hero{ /* give fixed height in connection to browser height, img needs to flow when changing window size
+       for section hero: height: 75vh */
+    display: flex;
+    justify-content: space-between;
+    word-wrap: normal;
+    font-size: 30px;
+    font-family: Tahoma;
+    height: 75vh;
+    padding: 30px;
+}
+#herot{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#heroi{
+    display: flex;
+    width: 50%;
+    background: url(Bordea.png);
+    background-repeat: no-repeat right left;
+    background-size: cover;
+    background-position: top center;
+    height: 100%;
+    box-sizing: border-box;
+}
+/*
+Next section should be "services", a three column section describing these three services: graphic design, front-end development, back-end development. Each column will have a title, an icon and a description.
+*/
+
+#services{
+    word-wrap: normal;
+    font-size: 18px;
+}
+#serv{
+    margin-top: 50px;
+}
+.rowS{
+    width: 100%;
+    display: flex;
+    background-color: beige;
+}
+.aServices{
+    display: flex;
+}
+.h3c{
+    display: flex;
+    margin-left: 25px;
+}
+#columnp{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#logoc{
+    position: flex;
+    padding-right: 30px;
+    margin-top: -10px;
+    width: 40px;
+    align-self: center;
+}
+#h2c{
+    padding-inline: 30px;
+    text-align: left;
+}
+
+
+/*Next section "portfolio", will have four columns, and present previously done projects. Each project will have a client name, the icons related to the services that have been done and a description. Add six projects in this section.
+*/
+
+#portfolio{
+    display: block;
+    padding: 20px;
+}
+.aPortfolio{
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+#h2port{
+    font-size: 16px;
+    margin-left: 30px;
+}
+.pocolumn{
+    padding-bottom: 30px;
+    border-style: ridge;
+    font-size: 14px;
+}
+.rowP{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.rowP article {
+    max-width:30%;
+}
+#h3po{
+    padding-left: 10px;
+    padding-bottom: 30px;
+}
+#h2po{
+    padding-left: 10px;
+}
+.title-container {
+    display: flex;
+    align-items: center;
+}
+  
+.image-container {
+   margin-left: 20px;
+   margin-bottom: 30px;
+}
+  
+#logopo {
+  max-width: 40px;
+}
+#portp{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/*Next section is "contact", and should have two columns: in the first, contact information (address, phone, email, social media links);  The second should have a contact form.
+*/
+#contact_m{
+    display: none;
+}
+
+#contact{
+    background-color: beige;
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 16px;
+}
+#contactinfo{
+    margin-left: 30px;
+}
+.hcontact{
+    margin-left: 30px;
+}
+.h2contact{
+    margin-left: 30px;
+    font-size: 15px;
+    font-weight: bold;
+}
+span{
+    font-weight: lighter;
+}
+#pcontact{
+    margin-left: 30px;
+}
+#hcon{
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+.columnco{
+    width: 50%;
+    padding-bottom: 30px; /* for submit button */
+    padding-top: 30px;
+}
+#logocon1{
+    margin-left: 30px;
+    width: 40px;
+}
+.logocon{
+    display: inline-flex;
+    width: 40px;
+}
+#hcon1{
+    display: flex;
+    padding-top: 70px;
+}
+input[type=text], input[type=email], select, textarea{
+    width: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+input[type=submit] {
+    margin-top: 20px;
+    background-color: lightskyblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+}
+#red{
+    color: red;
+}
+
+/*Lastly, a footer containing the mail logo and a copyright message.*/
+#footer{
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid rgb(0, 0, 0);
+}
+#logofo{
+    width: 100px;
+}
+
+
+/*
+Layout should be one column, with elements correctly aligned (except the hero section, that may remain on two columns).
+
+Mobile menu is a container with 100% width, 100vh height, black semitranparent background (95% opacity). This container will have the menu options and an X to close the page. The container will be hidden (display: none) until the menu-butoon is pressed.
+
+The menu button can be an image (the standard "hamburger menu" icon). This button should be hidden in the desktop mode and will only be shown in the mobile layout.
+The desktop navigation menu will be hidden in the mobile version.
+
+After the layout is final, implement a JS code that would manage the showing/hiding of the mobile menu:
+- the menu gets shown when the button is pressed
+- the menu gets hidden when the X in the mobile menu container is pressed, or when any menu option (from the mobile menu) is pressed.
+*/
+/* RESPONSIVE MOBILE */
+
+@media only screen and (max-width: 768px) {
+
+    #header{
+        display: none;
+    }
+    #headerm{
+        background-color: white;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+
+
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+    .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: 0.5s ease-in-out;
+        background-color: black;
+    }
+    .hamburger{
+        display: block;
+        position: relative;
+    }
+    .hamburger.active .bar:nth-child(2){ /* animation that makes it an x */
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){ /* animation that makes it an x */
+        transform: translateY(8px) rotate(45deg);
+        background-color: white;
+    }
+    .hamburger.active .bar:nth-child(3){ /* animation that makes it an x */
+        transform: translateY(-8px) rotate(-45deg);
+        background-color: white;
+    }
+    /* 100% width, 100vh height, black semitranparent background (95% opacity). */
+    .nav-menu{
+        display: none;
+        position: absolute;
+        margin: 0;
+        top: 0px;
+        gap: 0;
+        flex-direction: column;
+        background-color: black;
+        opacity: 95%;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+    }
+    /* padding to make buttons taller
+       reduce space between links
+    */
+    .nav-link{
+        color: white;
+    }
+    .nav-item{
+        margin: auto;
+        width: 80%;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+    .nav-menu.active{
+        display: flex;
+        left: 0;
+        padding: 0;
+    }
+
+    #wrapper{
+        width: 100%;
+    }
+
+
+
+    #hero{
+        font-size: 16px;
+        padding: 0;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+
+    #serv{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    #services{
+        margin-left: 15px;
+        margin-right: 15px;
+        display: flex;
+    }
+    .rowS{
+        flex-direction: column;
+    }
+
+
+
+    #h2port{
+        font-size: 24px;
+        margin: 0px;
+    }
+    .rowP{
+        flex-direction: column;
+        width: 100%;
+    }
+    .rowP article {
+        max-width: 100%;
+    }
+    .pocolumn{
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        width: 100%;
+    }
+    #logopo{
+        max-width: 40px;
+    }
+
+
+    #contact{
+        display: none;
+    }
+    #contact_m{
+        background-color: beige;
+        display: flex;
+        margin-top: 30px;
+        font-size: 16px;
+        flex-direction: column;
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+    .columnco{
+        display: flex;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px; /* for submit button */
+    }
+    #contactinfo{
+        margin: 0;
+        width: 100%;
+    }
+    #hcon1{
+        padding-left: 30px;
+    }
+    form{
+        flex-direction: column;
+        margin-left: 30px;
+    }
+    .formrow{
+        flex-direction: column;
+        width: 100%;
+    }
+    input[type=text], input[type=email], select, textarea{
+        width: 100%;
+    }
+    .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+    }
+    .col-75 {
+        float: left;
+        width: 100%;
+        margin-top: 6px;
+    }
+
+
+
+    #footer{
+        display: flex;
+        width: 100%;
+        margin-top: 100px;
+        padding-top: 50px;
+        border-top: 2px solid rgb(0, 0, 0);
+    }
+    #logofo{
+        width: 60px;
+    }
+}
